@@ -16,7 +16,7 @@ dist:
 install: all
 	@echo installing script to ${DESTDIR}${PREFIX}/bin
 	@mkdir -p ${DESTDIR}${PREFIX}/bin
-	@cp -f hosts-gen ${DESTDIR}${PREFIX}/bin
+	@cp -f bin/hosts-gen ${DESTDIR}${PREFIX}/bin
 	@chmod 755 ${DESTDIR}${PREFIX}/bin/hosts-gen
 	@echo installing ${DESTDIR}${PREFIX}/etc/hosts.d
 	@mkdir -p ${DESTDIR}${PREFIX}/etc/hosts.d

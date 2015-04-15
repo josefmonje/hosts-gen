@@ -19,6 +19,10 @@ moving the numbers in front of their name.
 
 ## How it works
 
+Install hosts-gen
+
+	sudo make install
+
 Just run
 
 	hosts-gen

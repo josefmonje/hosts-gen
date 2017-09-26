@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Filter list for various ad servers. Makes your webbrowser open less
+# connections.
+#
+# See the downloaded file itself for the copyright notice.
+#
+
+curl -s http://winhelp2002.mvps.org/hosts.txt > /etc/hosts.d/03-hosts.mvps
+

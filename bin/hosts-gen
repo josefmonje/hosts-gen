@@ -6,6 +6,8 @@ hostsfile="/etc/hosts"
 
 hostfiles="$(ls -1 "${etcdir}" | grep '^[0-9]*-.*')"
 
+! [ "$(id -u)" = "0" ] && printf "Run as root\\n" && exit 1
+
 [ -e "$hostsfile" ] && cp "$hostsfile" "$hostsfile.bkp"
 
 truncate -s 0 "${hostsfile}"
